@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script src="https://kit.fontawesome.com/f9e479ae5d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ingrid Tavares</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.jpg" alt="Logo Ingrid Tavares" width="20%">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="http://linkedin.com/in/ingridft">Linked In</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:ingriddft@gmail.com">e-mail</a>
+
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/11992169204">me liga</a>
+
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="nome">
+                <h1>Ingrid Tavares</h1>
+                <h5> Turismóloga</h5>
+                 </div>
+
+                 <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fa-solid fa-sort-down"></i>
+                 </div>
+
+                 <div style=display:none id="about">
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cupiditate impedit, iusto ullam vel, facere architecto animi doloremque, laudantium itaque commodi maiores cum. Dignissimos, molestias quasi. Delectus iusto fuga repellendus.</p>
+                 </div>
+
+                 <div class="form">
+                     <div>
+                         <p>Deixe seu contato!</p>
+                     </div>
+                     <form action="">
+                         <input type="text" placeholder="seu melhor e-mail">
+                         <button>enviar</button>
+                     </form>
+
+                 </div>
+
+        </section>
+
+    </main>
+<script>
+    function displayAbout(){
+        var arrow = document.getElementById('animation')
+        arrow.classList.toggle('rotate');
+        var display = document.getElementById('about')
+        display.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
